@@ -14,10 +14,10 @@
 
 class VotingSystem:
 def init(self, candidates):
-self.candidates = {candidate: 0 for candidate in candidates}
+self.candidates = {candidate for candidate in candidates}
 self.registered_voters = set() 
 
-def register_voter(self, voter_id):
+def register_voter(self,voter_id):
   if voter_id in self.registered_voters:
 print(f"Voter {voter_id} is already registered.")
   else:
